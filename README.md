@@ -20,6 +20,9 @@ A project to showcase HarperDB Custom function with Recharts to create a simple 
 ## 🚀 Deployed On Vercel
 - [Check the deployed app](https://flicks-admin.vercel.app/)
 
+## 🤲 Want to Motivate?
+Who doesn't need motivation? Please give the project a star(⭐) and/or share it in your dev circle.
+
 ## 🏃‍♀️ Run It Locally
 Check this [Readme file](app/README.md) for more information about how to run the application locally.
 
