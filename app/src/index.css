@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #212529;
@@ -12,6 +10,36 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+header {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #282d2e;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+footer {
+  position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+}
+
+footer a {
+  color: #00ebff;
+}
+
+.logo span{
+  font-size: 2.0rem;
+  font-weight: bold;
+  color: #00ebff;
+  margin-left: 0.1rem;
 }
 
 .recharts-text {

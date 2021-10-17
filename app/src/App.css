@@ -1,7 +1,42 @@
-.App {
+.wrapper {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(3,1fr);
-  margin-top: 1rem;
+  grid-template-columns: repeat(3, 1fr);
 }
+
+.box1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.box2 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.box3 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.box4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+
+.topNToggleBtn {
+  margin-left: 0.5rem;
+  color: #ff5200;
+  background: #000;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
 

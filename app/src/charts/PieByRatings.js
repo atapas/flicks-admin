@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 
 import { 
     PieChart, 
-    Pie, 
-    Sector, 
+    Pie,
     Cell,
     Tooltip,
-    Legend } from 'recharts';
+    Legend,
+    ResponsiveContainer } from 'recharts';
+
+import Heading from "../Heading";    
 
 const PieByRatings = () => {
     const [data, setData] = useState([]);
@@ -33,28 +35,31 @@ const PieByRatings = () => {
 
     return(
         <div>
-            <h2 style={{textAlign: 'center'}}>Books by Ratings</h2>
+            <Heading text={`All books by ratings`}/>
             {
                 isLoading ?
                 (<h3>Loading...</h3>) :
-                (<PieChart width={500} height={300}>
-                    <Pie
-                        data={data}
-                        cx={250}
-                        cy={130}
-                        innerRadius={60}
-                        outerRadius={80}
-                        fill="#8884d8"
-                        paddingAngle={5}
-                        dataKey="value"
-                    >
-                        {data.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                        ))}
-                    </Pie>
-                    <Tooltip />
-                    <Legend />
-                </PieChart>)
+                (
+                    <ResponsiveContainer width="100%" height={300}>
+                        <PieChart>
+                            <Pie
+                                data={data}
+                                cx={250}
+                                cy={130}
+                                innerRadius={60}
+                                outerRadius={80}
+                                fill="#8884d8"
+                                paddingAngle={5}
+                                dataKey="value"
+                            >
+                                {data.map((entry, index) => (
+                                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                ))}
+                            </Pie>
+                            <Tooltip />
+                            <Legend />
+                        </PieChart>
+                </ResponsiveContainer>)
             }
 
         </div>

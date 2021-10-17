@@ -7,8 +7,11 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend
+  Legend,
+  ResponsiveContainer
 } from "recharts";
+
+import Heading from "../Heading";
 
 const BarByTopics = () => {
   const [data, setData] = useState([]);
@@ -25,29 +28,29 @@ const BarByTopics = () => {
 
   return (
     <div>
-      <h2 style={{textAlign: 'center'}}>Books by Topics</h2>
+      <Heading text={`All books by topics`}/>
     { 
       isLoading 
       ? (<h3>Loading...</h3>)
       : (
-        <BarChart
-        width={500}
-        height={300}
-        data={data}
-        margin={{
-          top: 5,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="topic" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Bar dataKey="numberOfBooks" fill="#8491d8" />
-      </BarChart>
+        <ResponsiveContainer width="100%" height={300}>
+          <BarChart
+          data={data}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="topic" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar dataKey="numberOfBooks" fill="#8491d8" />
+        </BarChart>
+      </ResponsiveContainer>
       ) 
     }
     </div>
