@@ -90,7 +90,7 @@ module.exports = async (server, { hdbCore, logger }) => {
     }
   });
 
-  // GET the books by pages range
+  // GET the books by pages and views
   server.route({
     url: '/books/by-pages-views',
     method: 'GET',
