@@ -13,7 +13,7 @@ ReactDOM.render(
         <Monitor color="#00ebff" size={28} />
         <span>Flicks Dashboard</span>
       </a>
-      <ul>
+      <ul style={{display: 'flex'}}>
         <a
             href="https://flicks.gatsbyjs.io/"
             target="_blank"
