@@ -3,6 +3,13 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.wrapper .box {
+  margin: 5px;
+  background-color: #212529;
+  margin: 1rem;
+  border-radius: 7px;
+}
+
 .box1 {
   grid-column-start: 1;
   grid-row-start: 1;

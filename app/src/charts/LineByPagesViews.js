@@ -34,7 +34,7 @@ const LineByPagesViews = () => {
         isLoading ? (
           <div>Loading...</div>
         ) : (
-        <ResponsiveContainer width="100%" height={300}>
+        <ResponsiveContainer width="98%" height={300}>
           <LineChart
             data={data}
             margin={{

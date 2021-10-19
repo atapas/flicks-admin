@@ -8,10 +8,10 @@ import FunnelByTopN from './charts/FunnelByTopN';
 function App() {
   return (
     <div className="wrapper">
-      <div className="box1"><FunnelByTopN /></div>
-      <div className="box2"><BarByTopics /></div>
-      <div className="box3"><PieByRatings /></div>
-      <div className="box4"><LineByPagesViews /></div>
+      <div className="box1 box"><FunnelByTopN /></div>
+      <div className="box2 box"><BarByTopics /></div>
+      <div className="box3 box"><PieByRatings /></div>
+      <div className="box4 box"><LineByPagesViews /></div>
     </div>
   );
 }
