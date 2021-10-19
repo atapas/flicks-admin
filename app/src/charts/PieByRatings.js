@@ -44,7 +44,7 @@ const PieByRatings = () => {
                         <PieChart>
                             <Pie
                                 data={data}
-                                cx={250}
+                                cx={'50%'}
                                 cy={130}
                                 innerRadius={60}
                                 outerRadius={80}

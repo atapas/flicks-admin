@@ -39,4 +39,36 @@
   cursor: pointer;
 }
 
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .box1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  
+  .box2 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  
+  .box3 {
+    grid-column-start: 1;
+    grid-row-start: 7;
+    grid-row-end: 9;
+  }
+  
+  .box4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 11;
+    grid-row-end: 14;
+  }
+}
+
 
