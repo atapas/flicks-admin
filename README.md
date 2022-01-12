@@ -23,6 +23,8 @@ A project to showcase HarperDB Custom function with Recharts to create a simple 
 ## 🤲 Want to Motivate?
 Who doesn't need motivation? Please give the project a star(⭐) and/or share it in your dev circle.
 
+[![Stargazers repo roster for @atapas/flicks-admin](https://reporoster.com/stars/atapas/flicks-admin)](https://github.com/atapas/flicks-admin/stargazers)
+
 ## 🏃‍♀️ Run It Locally
 Check this [Readme file](app/README.md) for more information about how to run the application locally.
 
